@@ -1,13 +1,25 @@
 import axios from 'axios';
 
-const API_KEY = '20744853-e6e709f705befc52cb2e1c259';
+const API_KEY = '1ac1fd301cd441bc3d222350adc1c163';
 
-const getImages = (query, perPage, page) => {
+axios.defaults.baseURL = 'https://api.themoviedb.org/3';
+
+const trendingMovies = () => {
   return axios
-    .get(
-      `https://pixabay.com/api/?q=${query}&page=${page}&key=${API_KEY}&image_type=photo&orientation=horizontal&per_page=${perPage}`,
-    )
-    .then(res => res.data.hits);
+    .get(`/trending/movie/day?api_key=${API_KEY}`)
+    .then(res => res.data);
 };
 
-export default getImages;
+const searchMovie = movie => {
+  return axios
+    .get(`/search/movie?api_key=${API_KEY}&language=en-US&query=${movie}`)
+    .then(res => res.data);
+};
+
+const movieDetails = movieId => {
+  return axios
+    .get(`/movie/${movieId}?api_key=${API_KEY}&language=en-US`)
+    .then(res => res.data);
+};
+
+export { trendingMovies, searchMovie, movieDetails };
