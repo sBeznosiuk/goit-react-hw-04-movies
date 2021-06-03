@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "goit-react-hw-04-movies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,7 +32,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://sbeznosiuk.github.io/goit-react-hw-03-image-finder/",
+  "homepage": "https://sbeznosiuk.github.io/goit-react-hw-04-movies/",
   "browserslist": {
     "production": [
       ">0.2%",
