@@ -1,22 +1,30 @@
 import React, { Component } from 'react';
+import { searchMovie } from '../../api/api';
+import MovieList from '../MovieList/MovieList';
 
 class MoviesPage extends Component {
   state = {
-    value: '',
+    data: [],
+    query: '',
   };
+
+  componentDidUpdate() {}
 
   onChange = e => {
     const { value } = e.target;
 
-    this.setState({ value: value });
+    this.setState({ query: value });
   };
 
   onSubmit = e => {
     e.preventDefault();
 
-    this.props.onSubmit(this.state.value);
+    !!this.state.query.length &&
+      searchMovie(this.state.query).then(({ results }) => {
+        this.setState({ data: results });
+        return results;
+      });
   };
-
   render() {
     return (
       <>
@@ -28,9 +36,7 @@ class MoviesPage extends Component {
           <button type="submit">Search</button>
         </form>
         <ul>
-          {this.props.data.map(item => (
-            <li key={item.id}>{item.title}</li>
-          ))}
+          <MovieList data={this.state.data} />
         </ul>
       </>
     );

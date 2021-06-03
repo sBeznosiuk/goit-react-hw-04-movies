@@ -22,4 +22,16 @@ const movieDetails = movieId => {
     .then(res => res.data);
 };
 
-export { trendingMovies, searchMovie, movieDetails };
+const movieCast = id => {
+  return axios
+    .get(`/movie/${id}/credits?api_key=${API_KEY}&language=en-US`)
+    .then(res => res.data);
+};
+
+const movieReviews = id => {
+  return axios.get(
+    `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`,
+  );
+};
+
+export { trendingMovies, searchMovie, movieDetails, movieCast, movieReviews };

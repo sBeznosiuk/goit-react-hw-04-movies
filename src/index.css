@@ -138,7 +138,8 @@ img {
 .ImageGallery {
   display: grid;
   max-width: calc(100vw - 48px);
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px
+  , 1fr));
   grid-gap: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -198,6 +199,7 @@ img {
   padding: 8px 16px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
   border-radius: 2px;
   background-color: #3f51b5;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -220,4 +222,39 @@ img {
 .Button:hover,
 .Button:focus {
   background-color: #303f9f;
+}
+
+.NavLink {
+    color: blue;
+}
+
+.NavLink--active {
+    color: red;
+}
+
+.Header {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  border-radius: 3px;
+}
+
+
+.Header li a {
+text-decoration: none;
+}
+
+.Header li a:hover {
+color: pink;
+transition: 150ms linear;
+}
+
+.Header li:first-child {
+  padding-right: 10px;
+  border-right: 1px solid grey
+}
+
+.Header li:last-child {
+  padding-left: 10px;
 }
