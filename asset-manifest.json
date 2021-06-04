@@ -6,8 +6,8 @@
     "HomePage.js.map": "/goit-react-hw-04-movies/static/js/HomePage.9e1e8053.chunk.js.map",
     "MovieCast.js": "/goit-react-hw-04-movies/static/js/MovieCast.e95685a7.chunk.js",
     "MovieCast.js.map": "/goit-react-hw-04-movies/static/js/MovieCast.e95685a7.chunk.js.map",
-    "MovieDetailsPage.js": "/goit-react-hw-04-movies/static/js/MovieDetailsPage.fdcee1d5.chunk.js",
-    "MovieDetailsPage.js.map": "/goit-react-hw-04-movies/static/js/MovieDetailsPage.fdcee1d5.chunk.js.map",
+    "MovieDetailsPage.js": "/goit-react-hw-04-movies/static/js/MovieDetailsPage.87360142.chunk.js",
+    "MovieDetailsPage.js.map": "/goit-react-hw-04-movies/static/js/MovieDetailsPage.87360142.chunk.js.map",
     "MovieReviews.js": "/goit-react-hw-04-movies/static/js/MovieReviews.963f6881.chunk.js",
     "MovieReviews.js.map": "/goit-react-hw-04-movies/static/js/MovieReviews.963f6881.chunk.js.map",
     "MoviesPage.js": "/goit-react-hw-04-movies/static/js/MoviesPage.11d0c245.chunk.js",
@@ -15,10 +15,10 @@
     "NotFound.js": "/goit-react-hw-04-movies/static/js/NotFound.fde01799.chunk.js",
     "NotFound.js.map": "/goit-react-hw-04-movies/static/js/NotFound.fde01799.chunk.js.map",
     "main.css": "/goit-react-hw-04-movies/static/css/main.4c8a2603.chunk.css",
-    "main.js": "/goit-react-hw-04-movies/static/js/main.813a162f.chunk.js",
-    "main.js.map": "/goit-react-hw-04-movies/static/js/main.813a162f.chunk.js.map",
-    "runtime-main.js": "/goit-react-hw-04-movies/static/js/runtime-main.bab96486.js",
-    "runtime-main.js.map": "/goit-react-hw-04-movies/static/js/runtime-main.bab96486.js.map",
+    "main.js": "/goit-react-hw-04-movies/static/js/main.cff1d205.chunk.js",
+    "main.js.map": "/goit-react-hw-04-movies/static/js/main.cff1d205.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-04-movies/static/js/runtime-main.3f21e090.js",
+    "runtime-main.js.map": "/goit-react-hw-04-movies/static/js/runtime-main.3f21e090.js.map",
     "static/js/9.f583b47a.chunk.js": "/goit-react-hw-04-movies/static/js/9.f583b47a.chunk.js",
     "static/js/9.f583b47a.chunk.js.map": "/goit-react-hw-04-movies/static/js/9.f583b47a.chunk.js.map",
     "index.html": "/goit-react-hw-04-movies/index.html",
@@ -26,9 +26,9 @@
     "static/js/9.f583b47a.chunk.js.LICENSE.txt": "/goit-react-hw-04-movies/static/js/9.f583b47a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bab96486.js",
+    "static/js/runtime-main.3f21e090.js",
     "static/js/9.f583b47a.chunk.js",
     "static/css/main.4c8a2603.chunk.css",
-    "static/js/main.813a162f.chunk.js"
+    "static/js/main.cff1d205.chunk.js"
   ]
 }
