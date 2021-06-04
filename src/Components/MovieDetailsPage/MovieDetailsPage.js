@@ -56,11 +56,13 @@ class MovieDetailsPage extends Component {
             Go back
           </button>
           <ul className="ImageGallery">
-            <img
-              src={`https://image.tmdb.org/t/p/original/${film.poster_path}`}
-              alt=""
-              width="250"
-            />
+            {film.poster_path && (
+              <img
+                src={`https://image.tmdb.org/t/p/original/${film.poster_path}`}
+                alt=""
+                width="250"
+              />
+            )}
             <ul style={{ listStyle: 'none' }}>
               <li>
                 <h2>{film.title}</h2>

@@ -3,6 +3,7 @@ import Loader from 'react-loader-spinner';
 
 const Spinner = () => (
   <Loader
+    className="loader"
     type="ThreeDots"
     color="#00BFFF"
     height={100}
