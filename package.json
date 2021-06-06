@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "netlify deploy -p",
     "server": "json-server --watch db.json"
   },
   "eslintConfig": {
@@ -33,7 +33,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://sbeznosiuk.github.io/goit-react-hw-04-movies/",
+
   "browserslist": {
     "production": [
       ">0.2%",
