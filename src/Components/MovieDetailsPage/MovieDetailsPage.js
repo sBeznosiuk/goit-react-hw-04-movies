@@ -34,6 +34,7 @@ class MovieDetailsPage extends Component {
 
   state = {
     film: {},
+    path: this.props.location?.state?.from,
   };
 
   async componentDidMount() {
@@ -43,7 +44,7 @@ class MovieDetailsPage extends Component {
   }
 
   handleGoBack = () => {
-    this.props.history.push(this.props.location?.state?.from ?? routes.movies);
+    this.props.history.push(this.state.path ?? routes.movies);
   };
 
   render() {

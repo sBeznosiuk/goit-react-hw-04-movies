@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { movieCast } from '../../api/api';
+import { withRouter } from 'react-router-dom';
 
 class MovieCast extends Component {
   static propTypes = {
@@ -46,4 +47,4 @@ class MovieCast extends Component {
   }
 }
 
-export default MovieCast;
+export default withRouter(MovieCast);

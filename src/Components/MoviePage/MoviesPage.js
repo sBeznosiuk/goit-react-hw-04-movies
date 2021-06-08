@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { searchMovie } from '../../api/api';
 import MovieList from '../MovieList/MovieList';
-import { Route, withRouter } from 'react-router-dom';
-import routes from '../../routes';
+import { withRouter } from 'react-router-dom';
 
 class MoviesPage extends Component {
   state = {
