@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { searchMovie } from '../../api/api';
 import MovieList from '../MovieList/MovieList';
+import { Route, withRouter } from 'react-router-dom';
+import routes from '../../routes';
 
 class MoviesPage extends Component {
   state = {
@@ -8,7 +10,14 @@ class MoviesPage extends Component {
     query: '',
   };
 
-  componentDidUpdate() {}
+  componentDidMount() {
+    if (this.props.location.search.slice(7) !== this.state.query) {
+      searchMovie(this.props.location.search.slice(7)).then(({ results }) => {
+        this.setState({ data: results });
+        return results;
+      });
+    }
+  }
 
   onChange = e => {
     const { value } = e.target;
@@ -22,8 +31,13 @@ class MoviesPage extends Component {
     !!this.state.query.length &&
       searchMovie(this.state.query).then(({ results }) => {
         this.setState({ data: results });
+
         return results;
       });
+
+    this.props.history.push({
+      search: `?query=${this.state.query}`,
+    });
   };
   render() {
     return (
@@ -43,4 +57,4 @@ class MoviesPage extends Component {
   }
 }
 
-export default MoviesPage;
+export default withRouter(MoviesPage);
